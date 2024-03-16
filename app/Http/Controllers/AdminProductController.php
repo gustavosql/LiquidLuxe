@@ -38,7 +38,7 @@ class AdminProductController extends Controller
 
         ]);
         if (!empty($input['cover']) && $input['cover']->isValid()) {
-            Storage::delete($product->cover);
+            Storage::delete($product->cover ?? '');
             $file = $input['cover'];
             $path = $file->store('public/products');
             $input['cover'] = $path;
@@ -86,6 +86,7 @@ class AdminProductController extends Controller
     public function destroy(Product $product)
     {
         $product->delete();
+        Storage::delete($product->cover ?? '');
         return Redirect::route('admin.product');
     }
 }
