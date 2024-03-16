@@ -10,11 +10,11 @@
         http-equiv="X-UA-Compatible"
         content="ie=edge"
     >
-    <title>Document</title>
+    <title>LiquidLuxe</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="text-gray-600">
+    <header class="text-gray-600 bg-gray-200">
         <div class="container mx-auto flex justify-between items-center p-5 items-center">
             <a href="/" class="flex title-font font-medium items-center text-gray-900">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
@@ -22,6 +22,25 @@
                 </svg>
                 <span class="ml-3 text-xl">LiquidLuxe</span>
             </a>
+
+<section>
+    <div class="container px-5  mx-auto">
+    <form
+    action=""
+    class="flex items-center space-x-5"
+    >
+    <div>
+        <input  type="text" id="search" name="search" placeholder="Pesquisar produtos..."
+               class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+
+    <div>
+        <button type="submit" class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Pesquisar</button>
+    </div>
+
+    </form>
+</div>
+</section>
             <div class="flex items-center">
                 <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
                     <a href="/" class="mr-5 hover:text-gray-900">Home</a>
