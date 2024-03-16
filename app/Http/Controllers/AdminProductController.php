@@ -38,7 +38,7 @@ class AdminProductController extends Controller
 
         ]);
         if (!empty($input['cover']) && $input['cover']->isValid()) {
-            Storage::detele($product->cover);
+            Storage::delete($product->cover);
             $file = $input['cover'];
             $path = $file->store('public/products');
             $input['cover'] = $path;
